@@ -1,0 +1,16 @@
+{
+  "name": "F1 Data Analytics",
+  "image": "mcr.microsoft.com/devcontainers/python:3.11",
+  "features": {
+    "ghcr.io/devcontainers/features/docker-in-docker:2": {
+      "version": "latest"
+    }
+  },
+  "forwardPorts": [
+    8080,
+    9092,
+    5432,
+    8501
+  ],
+  "postCreateCommand": "pip install requests pandas"
+}
